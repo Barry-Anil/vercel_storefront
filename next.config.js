@@ -9,9 +9,10 @@ module.exports = withStoreConfig({
   reactStrictMode: true,
   images: {
     domains: [
-      "medusa-public-images.s3.eu-west-1.amazonaws.com",
+      "medusa-backend.s3.ap-south-1.amazonaws.com",
       "localhost",
-      "medusa-server-testing.s3.amazonaws.com",
+      "images.pexels.com",
+      "medusa-public-images.s3.eu-west-1.amazonaws.com"
     ],
   },
 })

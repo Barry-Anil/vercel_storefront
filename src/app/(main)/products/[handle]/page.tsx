@@ -1,3 +1,4 @@
+
 import medusaRequest from "@lib/medusa-fetch"
 import ProductTemplate from "@modules/products/templates"
 import { Metadata } from "next"
@@ -21,15 +22,16 @@ async function getProducts(handle: string) {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  console.log(params, "params")
   const { products } = await getProducts(params.handle)
 
   const product = products[0]
 
   return {
-    title: `${product.title} | Acme Store`,
+    title: `${product.title} | ARTS GALLERY Store`,
     description: `${product.title}`,
     openGraph: {
-      title: `${product.title} | Acme Store`,
+      title: `${product.title} | ARTS GALLERY Store`,
       description: `${product.title}`,
       images: product.thumbnail ? [product.thumbnail] : [],
     },

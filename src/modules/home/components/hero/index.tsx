@@ -6,16 +6,15 @@ const Hero = () => {
     <div className="h-[90vh] w-full relative">
       <div className="text-white absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32">
         <h1 className="text-2xl-semi mb-4 drop-shadow-md shadow-black">
-          Summer styles are finally here
+          Explore the Special Collection
         </h1>
         <p className="text-base-regular max-w-[32rem] mb-6 drop-shadow-md shadow-black">
-          This year, our new summer collection will shelter you from the harsh
-          elements of a world that doesn&apos;t care if you live or die.
+          Unlock the Canvas of Creativity: Where Artistry Finds its Home!
         </p>
         <UnderlineLink href="/store">Explore products</UnderlineLink>
       </div>
       <Image
-        src="/hero.jpg"
+        src="https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=600"
         loading="eager"
         priority={true}
         quality={90}
@@ -26,6 +25,8 @@ const Hero = () => {
         sizes="100vw"
         style={{
           objectFit: "cover",
+          opacity: 0.9,
+          backgroundColor: "black"
         }}
       />
     </div>
